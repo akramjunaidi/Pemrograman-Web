@@ -1,0 +1,114 @@
+/* Reset & Base Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAF7F6;
+    color: #1A1A1A;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Logo */
+.header-logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    max-width: 280px;
+    height: auto;
+}
+
+#judul-utama {
+    color: #2E7D77;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* CSS Grid untuk Layout Tampilan Desktop */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Box Model Kartu */
+.kartu {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #7ECDC8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kartu h2 {
+    color: #2E7D77;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #7ECDC8;
+    padding-bottom: 8px;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Sub-Struktur Pengurus */
+.sub-struktur {
+    margin-bottom: 15px;
+}
+
+.sub-struktur h3 {
+    font-size: 15px;
+    color: #2E7D77;
+    margin-bottom: 5px;
+    background-color: #eaf7f6;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.sub-struktur ul {
+    list-style-type: square;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sub-struktur ul ul {
+    list-style-type: circle;
+    padding-left: 18px;
+}
+
+/* Responsive Web Design: Media Queries */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #judul-utama {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        max-width: 220px;
+    }
+}
