@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Anggota - LDMI Al-Fajr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo LDMI Al-Fajr" class="logo-img">
+        <h1>Lembaga Dakwah Mahasiswa Islam (LDMI) Al-Fajr</h1>
+    </header>
+    <nav>
+        <a href="organisasi.html">Organisasi & Struktur</a>
+        <a href="kegiatan.html">Kegiatan & Karya</a>
+        <a href="layanan.html">Portal Layanan</a>
+    </nav>
+
+    <main class="grid-container">
+        <section class="kartu">
+            <h2>Formulir Open Recruitment Anggota Baru</h2>
+            <form id="formPendaftaran">
+                <div class="grup-input">
+                    <label for="namaLengkap">Nama Lengkap:</label>
+                    <input type="text" id="namaLengkap" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="grup-input">
+                    <label for="nimAnggota">NIM:</label>
+                    <input type="number" id="nimAnggota" placeholder="Masukkan NIM (contoh: 250306033)" required>
+                </div>
+
+                <div class="grup-input">
+                    <label for="prodiAnggota">Fakultas / Program Studi:</label>
+                    <select id="prodiAnggota" required>
+                        <option value="">-- Pilih Prodi --</option>
+                        <option value="TI">Teknologi Informasi</option>
+                        <option value="PAI">Pendidikan Agama Islam</option>
+                        <option value="IQT">Ilmu Al-Qur'an dan Tafsir</option>
+                        <option value="KPI">Komunikasi dan Penyiaran Islam</option>
+                    </select>
+                </div>
+
+                <div class="grup-input">
+                    <label for="emailAnggota">Email:</label>
+                    <input type="email" id="emailAnggota" placeholder="contoh@gmail.com" required>
+                </div>
+
+                <div class="grup-input">
+                    <label for="waAnggota">Nomor WhatsApp:</label>
+                    <input type="tel" id="waAnggota" placeholder="08xxxxxxxxxx" required>
+                </div>
+
+                <div class="grup-input">
+                    <label for="motivasi">Motivasi Bergabung:</label>
+                    <textarea id="motivasi" rows="4" placeholder="Tuliskan alasan Anda bergabung..." required></textarea>
+                </div>
+
+                <button type="submit" class="tombol-submit">Kirim Pendaftaran</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 LDMI Al-Fajr UIN Mataram</p>
+    </footer>
