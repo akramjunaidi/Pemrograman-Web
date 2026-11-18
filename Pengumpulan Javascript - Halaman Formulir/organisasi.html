@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil &amp; Struktur Organisasi - LDMI Al-Fajr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo LDMI Al-Fajr" class="logo-img">
+        <h1>Lembaga Dakwah Mahasiswa Islam (LDMI) Al-Fajr</h1>
+    </header>
+    <nav>
+        <a href="organisasi.html" class="active">Organisasi &amp; Struktur</a>
+        <a href="kegiatan.html">Kegiatan &amp; Karya</a>
+        <a href="layanan.html">Portal Layanan</a>
+    </nav>
+
+    <main class="grid-container">
+        <section class="kartu">
+            <div class="banner">
+                <img src="banner.png" alt="Banner LDMI Al-Fajr" class="banner-img">
+            </div>
+            <h2>Tentang LDMI Al-Fajr</h2>
+            <p>Lembaga Dakwah Mahasiswa Islam (LDMI) Al-Fajr adalah Unit Kegiatan Mahasiswa di UIN Mataram yang berdiri sejak tahun 2002 dan resmi diakui sebagai UKM pada 8 Oktober 2008. Organisasi ini bergerak di bidang pengembangan spiritual, intelektual, dan sosial berbasis dakwah Islam Rahmatan lil 'Alamin.</p>
+        </section>
+
+        <section class="kartu">
+            <h2>Visi &amp; Misi</h2>
+            <h3>Visi</h3>
+            <p>Mewujudkan kader dakwah akademis, berakhlaqul karimah, dan berkontribusi aktif dalam peradaban kampus maupun masyarakat.</p>
+            
+            <h3>Misi</h3>
+            <ul>
+                <li>Memperkuat pembinaan spiritual dan intelektual mahasiswa.</li>
+                <li>Menjalin silaturahmi dan ukhuwah Islamiyah antar civitas akademika.</li>
+                <li>Pengembangan media kreatif berbasis dakwah digital.</li>
+            </ul>
+            <br>
+            <a href="daftar.html" class="tombol-aksi" style="display:inline-block; text-decoration:none;">Daftar Menjadi Anggota</a>
+        </section>
+
+        <section class="kartu" id="struktur">
+            <h2>Diagram Struktur &amp; Biografi Pengurus 2026</h2>
+
+            <div class="ringkasan-box">
+                <p>Menampilkan <strong id="totalPengurus">0</strong> dari 35 Pengurus LDMI Al-Fajr 2026</p>
+            </div>
+            
+            <div class="search-box" style="margin-bottom: 20px;">
+                <input type="text" id="cariPengurus" placeholder="Ketik Nama Pengurus, Departemen, Jurusan, atau Alamat...">
+            </div>
+            
+            <div id="kontainer-struktur"></div>
+        </section>
+
+        <div id="modalBiografi" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="tutupModal">&times;</span>
+                <img id="modalFoto" src="placeholder.jpeg" alt="Foto Pengurus" style="width:100px; height:100px; border-radius:50%; object-fit:cover; object-position:top; margin-bottom:10px; border:3px solid #117a4e;">
+                <h2 id="modalNama" style="border:none; margin-bottom:4px; padding-bottom:0;">Nama Pengurus</h2>
+                <h3 id="modalJabatan" style="margin-top:0; margin-bottom:10px;">Jabatan</h3>
+                <div style="text-align:left; background:#f0fdf4; padding:12px 15px; border-radius:6px; border-left:4px solid #117a4e; font-size:0.9rem; color:#1e293b;">
+                    <p><strong>Departemen:</strong> <span id="modalBidang">-</span></p>
+                    <p><strong>Jurusan / Kampus:</strong> <span id="modalProdi">-</span></p>
+                    <p><strong>Alamat:</strong> <span id="modalAlamat">-</span></p>
+                    <p><strong>No. HP / WhatsApp:</strong> <span id="modalNoHP">-</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LDMI Al-Fajr UIN Mataram</p>
+    </footer>
+
+    <script src="organisasi.js"></script>
+</body>
+</html>
