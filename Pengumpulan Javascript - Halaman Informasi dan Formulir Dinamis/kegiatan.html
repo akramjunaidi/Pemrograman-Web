@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Kegiatan - LDMI Al-Fajr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo LDMI Al-Fajr" class="logo-img">
+        <h1>Lembaga Dakwah Mahasiswa Islam (LDMI) Al-Fajr</h1>
+    </header>
+    <nav>
+        <a href="organisasi.html">Organisasi & Struktur</a>
+        <a href="kegiatan.html" class="active">Kegiatan & Karya</a>
+        <a href="layanan.html">Portal Layanan</a>
+    </nav>
+
+    <main class="grid-container">
+        <section class="kartu">
+            <h2>Katalog Program Kerja & Kegiatan Rutin</h2>
+            
+            <div class="ringkasan-box">
+                <p>Total Program Kerja Aktif: <strong id="totalKegiatan">0</strong> Kegiatan</p>
+            </div>
+
+            <div class="search-box" style="margin-bottom: 20px;">
+                <input type="text" id="inputCari" placeholder="Cari kegiatan atau kata kunci...">
+            </div>
+
+            <div id="kontainerKegiatan" class="grid-kegiatan"></div>
+
+            <!-- Tombol Navigasi ke Halaman Formulir Nayla (karya.html) -->
+            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center;">
+                <p style="margin-bottom: 12px; color: #475569;">Ingin berpartisipasi dalam kegiatan atau menyetorkan karya dakwah?</p>
+                <a href="karya.html" class="tombol-aksi" style="display: inline-block; text-decoration: none;">Kirim Karya & Registrasi Event</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 LDMI Al-Fajr UIN Mataram</p>
+    </footer>
+
+    <script src="kegiatan.js"></script>
+</body>
+</html>
