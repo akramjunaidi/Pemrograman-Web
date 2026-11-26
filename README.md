@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌐 Portal Informasi & Layanan Digital UKM LDMI Al-Fajr
+# 🌐 Pembuatan Website Organsasi UKM LDMI Al-Fajr UIN Mataram
 **Proyek Akhir Mata Kuliah Pemrograman Web — Kelas A7**  
 Program Studi Teknologi Informasi, Fakultas Dakwah dan Ilmu Komunikasi  
 **Universitas Islam Negeri (UIN) Mataram**
